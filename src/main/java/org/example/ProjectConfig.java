@@ -23,4 +23,12 @@ public class ProjectConfig {
         c.setName("Toma");
         return c;
     }
+
+    @Bean
+    public Human humanWithToma() {
+        Human h = new Human();
+        h.setName("Amir");
+        h.setCat(catToma());
+        return h;
+    }
 }
